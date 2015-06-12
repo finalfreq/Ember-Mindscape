@@ -11,6 +11,12 @@ App.QuestionController = Ember.ObjectController.extend({
     },
     deleteAnswer: function(thisAnswer) {
       thisAnswer.destroyRecord();
+    },
+    edit: function() {
+      $("#editModal").modal('show');
+    },
+    save: function() {
+    this.get('model').save();
     }
   }
 });

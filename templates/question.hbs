@@ -2,6 +2,7 @@
 <h1 class="page-header text-center">{{author}}'s Question:</h1>
 <h2 class="text-center">{{question}}</h2>
 <p class="lead">{{description}}</p>
+<button type="submit" class="btn btn-block btn-warning" {{action 'edit'}}>Edit Question</button>
 <button type="submit" class="btn btn-block btn-danger" {{action 'delete'}}>Delete Question</button>
 {{#link-to 'new-answer'}}<button class="btn btn-success btn-block" {{action 'newAnswer'}}> Add Answer </button> {{/link-to}}
 </div>
@@ -27,7 +28,7 @@
             <label for="description">Description</label>
             {{textarea id="description" class="form-control" rows="6" value=description}}
           </div>
-          <button type="submit" class="btn btn-success btn-block" {{action 'save'}}>Add Question</button>
+          <button type="submit" class="btn btn-success btn-block" data-dismiss="modal" {{action 'save'}}>Save</button>
         </form>
       </div>
     </div>
