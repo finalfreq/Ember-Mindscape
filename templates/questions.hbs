@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header jumbotron">
 <h1 class="page-header text-center">MindScape:</h1>
 <p class="lead">
   Bringing the top minds together to answer some of lifes most challenging questions.
@@ -8,6 +8,14 @@
 <div class="questions">
   <h1>Current questions needing answering:</h1>
   {{#each}}
-
+    {{#link-to 'question' this.id}}<div class="row clearfix well">
+      <div class="col-md-6">
+        {{author}}
+      </div>
+      <div class="col-md-6">
+        {{question}}
+      </div>
+    </div>
+    {{/link-to}}
   {{/each}}
 </div>
