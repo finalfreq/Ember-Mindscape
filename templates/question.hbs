@@ -58,10 +58,10 @@
       <button type="submit" class="btn btn-danger" {{action 'deleteAnswer' answer}}>Remove</button>
     </div>
     <div class="col-md-2">
-      <h2>{{name}} </h2>
+      <h2>{{answer.name}} </h2>
     </div>
     <div class="col-md-6 col-md-offset-1">
-      <h2>answer: {{body}} </h2>
+      <h2>answer: {{answer.body}} </h2>
     </div>
   </div>
   {{/each}}
