@@ -1,9 +1,10 @@
-
+* {
+  font-family: "Lucida Console", Monaco, monospace;
+}
 body {
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #008966;
 
 }
-
 
 .nav li:hover, #nav:hover {
   background: silver;
@@ -12,8 +13,4 @@ body {
 .navbar-header {
   margin: 0;
   /* padding-left: 25px; */
-}
-
-body {
-  color: #008966;
 }
