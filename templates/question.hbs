@@ -2,11 +2,24 @@
 <h1 class="page-header text-center">{{author}}'s Question:</h1>
 <h2 class="text-center">{{question}}</h2>
 <p class="lead">{{description}}</p>
-{{#link-to 'new-answer' this.id class="btn btn-success btn-block"}}Add Answer {{/link-to}}
+<button type="submit" class="btn btn-block btn-danger" {{action 'delete'}}>Delete Question</button>
+{{#link-to 'new-answer'}}<button class="btn btn-success btn-block" {{action 'newAnswer'}}> Add Answer </button> {{/link-to}}
 </div>
-{{outlet}}
-<div class="answers jumbotron">
-{{#each answers}}
 
-{{/each}}
+{{outlet}}
+
+<div class="answers">
+  {{#each answers}}
+  <div class="row clearfix well">
+    <div class="col-md-3">
+      <img src="img/answer.jpg" alt="a picture of telepathic people" />
+    </div>
+    <div class="col-md-2">
+      <h2>{{name}} </h2>
+    </div>
+    <div class="col-md-6 col-md-offset-1">
+      <h3>answer: {{body}} </h3>
+    </div>
+  </div>
+  {{/each}}
 </div>
