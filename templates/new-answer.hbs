@@ -1,0 +1,13 @@
+<h1>Add Answer</h1>
+
+<form>
+  <div class="form-group">
+  <label for="author">Name</label>
+  {{input id="author" class="form-control" value=author}}
+  </div>
+  <div class="form-group">
+  <label for="body">Description</label>
+  {{textarea id="body" class="form-control" rows="6" value=body}}
+  </div>
+  <button type="submit" class="btn btn-success btn-block" {{action 'save'}}>Add Question</button>
+</form>

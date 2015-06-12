@@ -1,0 +1,12 @@
+<div class="question jumbotron">
+<h1 class="page-header text-center">{{author}}'s Question:</h1>
+<h2 class="text-center">{{question}}</h2>
+<p class="lead">{{description}}</p>
+{{#link-to 'new-answer' this.id class="btn btn-success btn-block"}}Add Answer {{/link-to}}
+</div>
+{{outlet}}
+<div class="answers jumbotron">
+{{#each answers}}
+
+{{/each}}
+</div>
