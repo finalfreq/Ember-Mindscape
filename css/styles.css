@@ -1,0 +1,15 @@
+
+body {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+
+}
+
+
+.nav li:hover, #nav:hover {
+  background: silver;
+}
+
+.navbar-header {
+  margin: 0;
+  /* padding-left: 25px; */
+}
