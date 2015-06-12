@@ -3,13 +3,14 @@ App.QuestionController = Ember.ObjectController.extend({
     newAnswer: function() {
       $("#myModal").modal('show');
     },
-    delete: function () {
+    delete: function() {
       if (confirm('Are you sure?')) {
         this.get('model').destroyRecord();
         this.transitionToRoute('questions');
       }
-
+    },
+    deleteAnswer: function(thisAnswer) {
+      thisAnswer.destroyRecord();
     }
-
   }
 });
