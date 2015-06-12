@@ -4,5 +4,6 @@ App.Router.map(function() {
     this.resource('new-answer');
   });
   this.resource('new-question');
+  this.resource('about');
 
 });
